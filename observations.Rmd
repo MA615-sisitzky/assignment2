@@ -1,12 +1,15 @@
 ---
-title: "Observations"
+title: "Child Mortality and Vaccination Rates"
 author: "Andrew Sisitzky"
-date: "10/9/2021"
+date: "10/8/2021"
 output: html_document
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
+library(ggplot2)
+library(tidyverse)
+library(broom)
 ```
 
 ```{r}
@@ -19,6 +22,7 @@ The two datasets that I chose to analyze were vaccination rate (of children at o
 ```{r}
 plot_gg(gapminder.model, "Vaccination_Rate", "Mortality") + labs(x = "Vaccination Rate", y = "Mortality")
 ```
+
 This first visualization shows the dataset in its entirety. My expectations were confirmed by this visualization: that there would be a negative correlation between vaccination rate and child mortality. It appears that the nations with high rates of children who have not received at least one vaccine also experience high rates of child mortality.
 
 
