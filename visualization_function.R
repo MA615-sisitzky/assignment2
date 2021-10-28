@@ -1,5 +1,5 @@
 ## sourcing wrangling code file
-source("~/Desktop/MA_615/assignment2/wrangling_code.R")
+source("wrangling_code.R")
 
 ## generating linear model for the relationship between the two variables
 gapminder.model <- lm(Mortality ~ Vaccination_Rate, data = mortality.vacc)
