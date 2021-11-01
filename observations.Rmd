@@ -13,8 +13,8 @@ library(broom)
 ```
 
 ```{r}
-source("~/Desktop/MA_615/assignment2/wrangling_code.R")
-source("~/Desktop/MA_615/assignment2/visualization_function.R")
+source("wrangling_code.R")
+source("visualization_function.R")
 ```
 
 The two datasets that I chose to analyze were vaccination rate (of children at or under the age of 1) and child mortality. I filtered this data down to only the years 1979 to 2018.
@@ -33,8 +33,10 @@ plot_gg(gapminder.model2, "Vaccination_Rate", "Mortality") + labs(x = "Vaccinati
 
 For this second visualization, I filtered the data to only include the years 2000 and onward. I wanted to see if this trend remained constant in more recent years. Based on this visualization, it appears that my expectations hold true in the years after 2000. Nations with vaccination rates closer to 100 are much more likely to have child mortality rates closer to 0.  
 
+```{r}
+##################Yujia Wang added the code##################
+plot_gg_Yujia(gapminder.model2, "Vaccination_Rate", "Mortality") + labs(x = "Vaccination Rate", y = "Mortality")
+##################Yujia Wang added the code##################
+```
 
-
-
-
-
+new branch
