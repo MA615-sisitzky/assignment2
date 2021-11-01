@@ -29,5 +29,15 @@ summary(gapminder.model2)
 ## running plot_gg function with filtered data
 plot_gg(gapminder.model2, "Vaccination_Rate", "Mortality") + labs(x = "Vaccination Rate", y = "Mortality")
 
+##################Yujia Wang added the code##################
+plot_gg_Yujia <- function(model, variable1, variable2, .fitted = ".fitted") {
+  augment(model) %>%
+    ggplot() +
+    geom_point(aes_string(x = variable1, y = variable2), color = "sky blue") +
+    geom_line(aes_string(x = variable1, y = .fitted)) +
+    theme_minimal()
+}
+plot_gg_Yujia(gapminder.model2, "Vaccination_Rate", "Mortality") + labs(x = "Vaccination Rate", y = "Mortality")
+##################Yujia Wang added the code##################
 
 
